@@ -1,0 +1,56 @@
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+.container{
+	position:relative;
+}
+
+.ir{
+	display:block;
+	text-indent:100%;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.wide-container {
+  margin:0 auto;
+  width:auto;
+  max-width:75%;
+}
+
+.narrow-container {
+	margin:0 auto;
+	width:auto;
+	max-width:75%;
+	@include media-breakpoint-up(md){
+		max-width:50%;
+	}
+}
+
+.content {
+  padding-top:50px;
+  padding-bottom:50px;
+  @include media-breakpoint-up(lg){
+    padding-top:80px;
+    padding-bottom:80px;
+  }
+	@include media-breakpoint-up(xl){
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+}
+
+.m-20 {
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.primary-color {
+  color:$primary;
+}
+
+.white-bg {
+  background:#fff;
+}
