@@ -1,0 +1,47 @@
+$height: 177px;
+$transition: 0.4s;
+
+@include media-breakpoint-up(lg){
+
+    body {
+
+        #header {
+
+            height:$height;
+            transition:$transition;
+
+            img {
+                transition:$transition;
+            }
+
+        }
+
+        &.scrolled {
+
+            #header {
+
+                position:fixed;
+                top:0;
+                left:0;
+                z-index:9999;
+                width:100%;
+                height:auto;
+                padding:10px 20px;
+                box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
+
+                img {
+                    width:150px;
+                }
+
+            }
+
+            main {
+                margin-top:$height;
+            }
+
+        }
+
+    }
+
+}
+

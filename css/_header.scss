@@ -4,8 +4,30 @@ header {
     padding:30px 20px;
     padding-bottom:40px;
 
+    text-align:center;
+
     img {
-        width:300px;
+        width:270px;
+
+        @include media-breakpoint-up(lg){
+            width:320px;
+        }
+    }
+
+    .nav-img {
+        &:after {
+            display:none;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+
+        .container {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
     }
 
 }

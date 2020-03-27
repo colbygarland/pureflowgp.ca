@@ -1,0 +1,18 @@
+.content {
+
+    position: relative;
+    z-index:1;
+    background:#fff;
+    padding-top:$padding-mobile;
+    padding-bottom:$padding-mobile;
+
+    @include media-breakpoint-up(lg){
+        padding-top:$padding-desktop;
+        padding-bottom:$padding-desktop;
+    }
+
+}
+
+.grey-bg {
+    background:$light;
+}
