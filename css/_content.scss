@@ -16,3 +16,19 @@
 .grey-bg {
     background:$light;
 }
+
+.primary-bg {
+    background:$primary;
+    color:#fff;
+    a {
+        color:#fff;
+        &:after {
+            background:#fff;
+        }
+    }
+}
+
+.gradient-bg {
+    @extend .primary-bg;
+    @include gradient;
+}

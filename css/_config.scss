@@ -6,3 +6,23 @@ $font: 'Work Sans', sans-serif;
 
 $padding-mobile: 50px;
 $padding-desktop:80px;
+
+
+.overlay {
+    content:'';
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:1;
+}
+
+@mixin gradient(){
+    background: rgb(0,139,162);
+    background: -moz-linear-gradient(0deg, rgba(0,139,162,1) 0%, rgba(60,164,174,1) 80%, rgba(48,168,180,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,139,162,1) 0%, rgba(60,164,174,1) 80%, rgba(48,168,180,1) 100%);
+    background: linear-gradient(0deg, rgba(0,139,162,1) 0%, rgba(60,164,174,1) 80%, rgba(48,168,180,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#008ba2",endColorstr="#30a8b4",GradientType=1);
+}

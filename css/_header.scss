@@ -6,8 +6,27 @@ header {
 
     text-align:center;
 
+    @include media-breakpoint-up(lg){
+
+        position: relative;
+        box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
+        z-index:9999;
+
+    }
+
+    .container {
+
+        @include media-breakpoint-up(lg){
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
     img {
+
         width:270px;
+        margin: 0;
 
         @include media-breakpoint-up(lg){
             width:320px;
@@ -15,17 +34,9 @@ header {
     }
 
     .nav-img {
+
         &:after {
             display:none;
-        }
-    }
-
-    @include media-breakpoint-up(lg){
-
-        .container {
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
     }
