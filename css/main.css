@@ -8421,6 +8421,10 @@ li {
   margin-bottom: 8px;
 }
 
+.text-primary {
+  color: #0295a3 !important;
+}
+
 header {
   background: #fff;
   padding: 30px 20px;
@@ -8707,6 +8711,76 @@ header img {
     height: 100%;
     min-height: 400px;
   }
+}
+
+.service {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding: 100px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .service {
+    padding: 120px 30px;
+  }
+}
+.service:before {
+  content: "";
+  transition: 0.4s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.4;
+  background: #000;
+}
+.service * {
+  margin: 0;
+}
+.service .btn {
+  position: relative;
+  z-index: 2;
+  text-shadow: none;
+  margin-top: 30px;
+}
+.service h3 {
+  transition: 0.4s;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+.service:hover:before, .service:active:before, .service:focus:before {
+  background: #0295a3;
+  opacity: 0.8;
+}
+
+.btn {
+  border-radius: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.btn:after {
+  display: none;
+}
+
+.btn-ghost-white {
+  border-color: #fff;
+  color: #fff;
+}
+.btn-ghost-white:hover, .btn-ghost-white:active, .btn-ghost-white:focus {
+  background: #fff;
+  color: #0295a3;
 }
 
 /*# sourceMappingURL=main.css.map */
