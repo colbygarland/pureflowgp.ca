@@ -2,17 +2,10 @@ header {
 
     background:#fff;
     padding:30px 20px;
-    padding-bottom:40px;
 
-    text-align:center;
-
-    @include media-breakpoint-up(lg){
-
-        position: relative;
-        box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
-        z-index:9999;
-
-    }
+    position: relative;
+    box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
+    z-index:9999;
 
     .container {
 
