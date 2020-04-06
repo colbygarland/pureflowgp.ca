@@ -10,10 +10,16 @@
 
 }
 
+.btn-link {
+    color:$primary;
+
+}
+
 .btn-ghost-white {
 
     border-color:#fff;
     color:#fff;
+    background:none;
 
     &:hover, &:active, &:focus {
         background:#fff;
