@@ -1,11 +1,11 @@
-$color: rgba(0,0,0,0.7);
+$color: rgba(0,0,0,0.5);
 $background: $light;
 
 #menuToggle
 {
     position: absolute;
-    top:0;
-    right:15px;
+    top:-15px;
+    right:-10px;
     transition: 0.4s;
 
     z-index: 9999;
