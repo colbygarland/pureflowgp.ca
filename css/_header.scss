@@ -1,7 +1,8 @@
 header {
 
     background:#fff;
-    padding:30px 20px;
+    padding-top:20px;
+    padding-bottom:20px;
 
     position: relative;
     box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
@@ -18,7 +19,7 @@ header {
 
     img {
 
-        width:270px;
+        width:220px;
         margin: 0;
 
         @include media-breakpoint-up(lg){

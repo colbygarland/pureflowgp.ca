@@ -6458,8 +6458,8 @@ h3 {
 
 #menuToggle {
   position: absolute;
-  top: -15px;
-  right: -10px;
+  top: -6px;
+  right: 10px;
   transition: 0.4s;
   z-index: 9999;
   -webkit-user-select: none;
@@ -6669,7 +6669,8 @@ li {
 
 header {
   background: #fff;
-  padding: 30px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
   box-shadow: 1px 1px 15px 0px rgba(0, 0, 0, 0.15);
   z-index: 1000;
@@ -6682,7 +6683,7 @@ header {
   }
 }
 header img {
-  width: 270px;
+  width: 220px;
   margin: 0;
 }
 @media (min-width: 992px) {
@@ -6760,11 +6761,16 @@ img {
 }
 
 body #header {
-  height: 150px;
+  height: 110px;
   transition: 0.4s;
 }
 body #header img {
   transition: 0.4s;
+}
+@media (min-width: 992px) {
+  body #header {
+    height: 140px;
+  }
 }
 body.scrolled #header {
   position: fixed;

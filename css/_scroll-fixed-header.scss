@@ -1,5 +1,5 @@
-$desktop-height: 177px;
-$mobile-height: 150px;
+$desktop-height: 140px;
+$mobile-height: 110px;
 $mobile-scrolled-height:60px;
 $transition: 0.4s;
 
@@ -12,6 +12,10 @@ body {
 
         img {
             transition:$transition;
+        }
+
+        @include media-breakpoint-up(lg){
+            height:$desktop-height;
         }
 
     }
