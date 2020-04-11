@@ -59,11 +59,84 @@
 
 <main>
 
-    <section class="video-bg">
-        <video autoplay muted loop>
-            <source src="video/preview.mp4" type="video/mp4">
-        </video>
-        <h1><span class="primary-color">Pure<span class="font-weight-light">flow</span></span> Calibration</h1>
+    <div>
+        <section class="photo-slider">
+            <div class="photo-slider__slide light" style="background-image:url(img/01-Edited.jpg)">
+                <div class="container">
+                    <div class="slide__textbox">
+                        <h2 class="textbox__title"><span class="font-weight-light">Instrument</span> Solutions</h2>
+                        <ul class="horizontal-list">
+                            <li>control</li>
+                            <li>pressure</li>
+                            <li>flow</li>
+                            <li>service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-slider__slide dark" style="background-image:url(img/21-Edited.jpg)">
+                <div class="container">
+                    <div class="slide__textbox">
+                        <h2 class="textbox__title"><span class="font-weight-light">Instrument</span> Solutions</h2>
+                        <ul class="horizontal-list">
+                            <li>control</li>
+                            <li>pressure</li>
+                            <li>flow</li>
+                            <li>service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-slider__slide light" style="background-image:url(img/23-Edited.jpg)">
+                <div class="container">
+                    <div class="slide__textbox">
+                        <h2 class="textbox__title"><span class="font-weight-light">Instrument</span> Solutions</h2>
+                        <ul class="horizontal-list">
+                            <li>control</li>
+                            <li>pressure</li>
+                            <li>flow</li>
+                            <li>service</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <section class="services__home row">
+        <div class="services__col col-sm-12 col-md-6 col-lg-4">
+            <div class="service" style="background-image:url(img/services/calibration.jpg)">
+                <h3>Calibration</h3>
+                <a href="services.html" class="btn btn-lg btn-ghost-white" >View</a>
+            </div>
+        </div>
+        <div class="services__col col-sm-12 col-md-6 col-lg-4">
+            <div class="service" style="background-image:url(img/services/instrumentation.jpg)">
+                <h3>Instrumentation</h3>
+                <a href="services.html" class="btn btn-lg btn-ghost-white">View</a>
+            </div>
+        </div>
+        <div class="services__col col-sm-12 col-md-6 col-lg-4">
+            <div class="service" style="background-image:url(img/services/inventory-management.jpg)">
+                <h3>Inventory Management</h3>
+                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+            </div>
+        </div>
+        <div class="services__col col-sm-12 col-md-6 col-lg-4">
+            <div class="service" style="background-image:url(img/services/sales.jpg)">
+                <h3>Sales</h3>
+                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+            </div>
+        </div>
+        <div class="services__col col-sm-12 col-md-6 col-lg-4">
+            <div class="service" style="background-image:url(img/services/turbine-management.jpg)">
+                <h3>Turbine Management</h3>
+                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+            </div>
+        </div>
     </section>
 
     <div class="content grey-bg">
@@ -128,4 +201,10 @@
 </footer>
 
 <script src="js/bundle.js"></script>
+<script>
+    $('.photo-slider').slick({
+       infinite:true,
+       dots: false,
+    });
+</script>
 </body>
