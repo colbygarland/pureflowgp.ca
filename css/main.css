@@ -7103,6 +7103,7 @@ header img {
   position: relative;
   z-index: 1;
   text-align: center;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .slide__textbox {
