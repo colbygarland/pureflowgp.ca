@@ -7096,12 +7096,13 @@ header img {
 }
 
 .slide__textbox {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .slide__textbox {
@@ -7115,14 +7116,17 @@ header img {
   }
 }
 .slide__textbox .textbox__title {
-  font-size: 50px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid;
+  font-size: 30px;
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (min-width: 992px) {
+  .slide__textbox .textbox__title {
+    font-size: 56px;
+  }
+}
+
 .photo-slider {
   display: none;
 }
