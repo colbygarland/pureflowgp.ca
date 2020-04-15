@@ -7096,8 +7096,8 @@ header img {
 }
 
 .slide__textbox {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -7105,15 +7105,11 @@ header img {
 }
 @media (min-width: 768px) {
   .slide__textbox {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
 @media (min-width: 768px) {
-  .slide__textbox {
-    padding-top: 350px;
-    padding-bottom: 350px;
-  }
   .slide__textbox li, .slide__textbox p {
     font-size: 25px;
   }
@@ -7124,13 +7120,9 @@ header img {
   padding-bottom: 30px;
   border-bottom: 1px solid;
   display: inline-block;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-@media (min-width: 992px) {
-  .slide__textbox .textbox__title {
-    font-size: 75px;
-  }
-}
-
 .photo-slider {
   display: none;
 }
