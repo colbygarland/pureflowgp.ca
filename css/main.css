@@ -7035,6 +7035,17 @@ header img {
   margin: 0;
 }
 
+.home .service {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .home .service {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
 .btn {
   border-radius: 0;
   padding-left: 30px;
@@ -7096,8 +7107,8 @@ header img {
 }
 
 .slide__textbox {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   position: relative;
@@ -7118,6 +7129,7 @@ header img {
 }
 .slide__textbox .textbox__title {
   font-size: 30px;
+  margin-bottom: 0;
   display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
