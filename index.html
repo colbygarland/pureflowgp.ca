@@ -116,31 +116,31 @@
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
             <div class="service" style="background-image:url(img/services/calibration.jpg)">
                 <h3>Calibration</h3>
-                <a href="services.html" class="btn btn-lg btn-ghost-white" >View</a>
+                <button data-toggle="modal" data-target="#calibration" class="btn btn-lg btn-ghost-white" >View</button>
             </div>
         </div>
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
             <div class="service" style="background-image:url(img/services/instrumentation.jpg)">
                 <h3>Instrumentation</h3>
-                <a href="services.html" class="btn btn-lg btn-ghost-white">View</a>
+                <button data-toggle="modal" data-target="#instrumentation" class="btn btn-lg btn-ghost-white">View</button>
             </div>
         </div>
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
             <div class="service" style="background-image:url(img/services/inventory-management.jpg)">
                 <h3>Inventory Management</h3>
-                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+                <button class="btn btn-lg btn-ghost-white" data-toggle="modal" data-target="#inventory">View</button>
             </div>
         </div>
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
             <div class="service" style="background-image:url(img/services/sales.jpg)">
                 <h3>Sales</h3>
-                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+                <button class="btn btn-lg btn-ghost-white" data-toggle="modal" data-target="#sales">View</button>
             </div>
         </div>
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
             <div class="service" style="background-image:url(img/services/turbine-management.jpg)">
                 <h3>Turbine Management</h3>
-                <a class="btn btn-lg btn-ghost-white" href="services.html">View</a>
+                <button class="btn btn-lg btn-ghost-white" data-toggle="modal" data-target="#turbine">View</button>
             </div>
         </div>
         <div class="services__col col-sm-12 col-md-6 col-lg-4">
@@ -211,6 +211,102 @@
         <p><small>&copy;2019-2020 <strong>Pureflow Instrument Solutions | Grande Prairie Alberta.</strong> All rights reserved. <br class="d-md-none" />Website by <a href="https://colbygarland.ca" target="_blank">Colby Garland</a></small></p>
     </div>
 </footer>
+
+<div class="modal fade" id="calibration" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Calibration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Our calibration methods are <span class="text-primary">perfect</span> for a company looking for accuracy and efficiency.</h3>
+                <p>Our systematic procedure to proving turbines guarantees accuracy while our process for pressure calibrations leaves no room for human error. We are always striving for excellence.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="instrumentation" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Instrumentation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Our dedication to excellence drives us to maintain your equipment with the utmost care.</h3>
+                <p>From start to finish, we have the means and resources to provide instrument solutions for you in an efficient and flexible way. From ensuring that every D4 Packing Ring is greased according to manufacturer specification to verifying that the maintenance tag on your Pressure Pilot has the proper location marked on it, we are ready to work with you.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="inventory" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Inventory Management</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Pureflow can offer you complete inventory management.</h3>
+                <p>Let us know what you want to keep at your shop and we will take care of inventory checks and re-stocking for you. Rest easy knowing that your inventory needs are always at hand.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sales" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sales</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Pureflow stocks the parts that you need.</h3>
+                <p>Our inventory list is growing everyday and we have the flexibility to have your product needs on our shelf ready to go. We would love to sit down with you to go over our options. Let us know your needs and let us take care of them</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="turbine" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Turbine Management</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Pureflow keeps your schedule at the forefront.</h3>
+                <p>We offer a large inventory of turbines on the shelf proved and ready to go that we can swap in and out at a moment’s notice. We have the means and resources to handle any order, large or small, and can handle all the scheduling for you. Let us make your life easier.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/vendor.js"></script>
 <script src="js/aos.js"></script>
