@@ -7009,7 +7009,7 @@ header img {
   position: relative;
   z-index: 2;
   text-shadow: none;
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 1rem;
 }
 .service h3 {
@@ -7018,6 +7018,7 @@ header img {
   z-index: 2;
   display: inline-block;
   font-size: 1.6rem;
+  text-transform: uppercase;
 }
 .service:hover:before, .service:active:before, .service:focus:before {
   background: #0295a3;
@@ -7145,6 +7146,7 @@ header img {
 }
 .photo-slider.slick-initialized {
   display: block;
+  margin-bottom: 20px;
 }
 
 .no-list-style {
