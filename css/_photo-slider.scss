@@ -19,6 +19,12 @@
         background:#FFF;
     }
 
+    &.lighter-opacity {
+        &:before {
+            opacity:0.3;
+        }
+    }
+
     &.dark {
         color:#FFF;
         &:before {

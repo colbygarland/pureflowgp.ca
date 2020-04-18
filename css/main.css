@@ -7039,7 +7039,7 @@ header img {
 .home .service {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
+  padding-left: 15px;
 }
 @media (min-width: 992px) {
   .home .service {
@@ -7091,6 +7091,9 @@ header img {
   z-index: 0;
   opacity: 0.45;
   background: #FFF;
+}
+.photo-slider__slide.lighter-opacity:before {
+  opacity: 0.3;
 }
 .photo-slider__slide.dark {
   color: #FFF;
