@@ -48,7 +48,7 @@ $background: $light;
 {
     display: block;
     width: 26px;
-    height: 2px;
+    height: 1px;
     margin-bottom: 5px;
     position: relative;
 
@@ -85,7 +85,7 @@ $background: $light;
 #menuToggle input:checked ~ span
 {
     opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
+    transform: rotate(45deg) translate(-4px, -1px);
     background: #232323;
 }
 
