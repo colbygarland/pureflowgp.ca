@@ -21,3 +21,31 @@
     }
 
 }
+
+.modal-photo-bg {
+
+    background-size:cover;
+    background-position: center;
+    padding:20px;
+    position:relative;
+    color:#fff;
+    margin-bottom:20px;
+
+    h3, p {
+        position:relative;
+        z-index:2;
+    }
+
+    &:before {
+        content:'';
+        background:#000;
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        z-index:1;
+        opacity:0.3;
+    }
+
+}

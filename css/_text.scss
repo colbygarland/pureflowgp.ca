@@ -28,3 +28,25 @@ a {
 .text-primary {
     color:$primary!important;
 }
+
+.modal-title {
+
+    color:$primary;
+    padding-left:40px;
+    position:relative;
+
+    &:before {
+        content:'';
+        background-image:url(../img/pureflow-icon.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:30px;
+        width:30px;
+        display:inline-block;
+        position:absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+}
