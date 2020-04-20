@@ -6976,6 +6976,9 @@ header img {
   position: relative;
   color: #fff;
   margin-bottom: 20px;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-top: -16px;
 }
 .modal-photo-bg h3, .modal-photo-bg p {
   position: relative;
