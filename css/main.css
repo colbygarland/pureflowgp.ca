@@ -6960,6 +6960,17 @@ header img {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.photo-bg h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 40px;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .photo-bg h2 {
+    font-size: 55px;
+  }
+}
 @media (min-width: 768px) {
   .photo-bg {
     margin-top: 0;
