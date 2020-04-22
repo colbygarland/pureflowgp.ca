@@ -9,6 +9,11 @@
     @include media-breakpoint-up(lg){
         padding-top:$padding-desktop;
         padding-bottom:$padding-desktop;
+
+        &.xl {
+            padding-top:#{$padding-desktop * 2};
+            padding-bottom:#{$padding-desktop * 2};
+        }
     }
 
 }

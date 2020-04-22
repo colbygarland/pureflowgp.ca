@@ -6880,6 +6880,10 @@ a:hover:after, a:active:after, a:focus:after {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .content.xl {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
 }
 
 .grey-bg {
