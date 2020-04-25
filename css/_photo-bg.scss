@@ -15,7 +15,7 @@
         text-transform:uppercase;
         font-weight:lighter;
         font-size:40px;
-        color:#fff;
+        color:$dark;
 
         @include media-breakpoint-up(lg){
             font-size:55px;
