@@ -6635,7 +6635,12 @@ h3 {
 }
 
 p, li {
-  font-size: 19px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  p, li {
+    font-size: 19px;
+  }
 }
 
 a {
@@ -6659,6 +6664,12 @@ a:hover, a:active, a:focus {
   color: #0295a3;
   padding-left: 40px;
   position: relative;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .modal-title {
+    font-size: 1.25rem;
+  }
 }
 .modal-title:before {
   content: "";
@@ -6674,8 +6685,19 @@ a:hover, a:active, a:focus {
   transform: translateY(-50%);
 }
 
-.font-size-lg {
-  font-size: 3rem;
+@media (min-width: 768px) {
+  .font-size-lg {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .font-size-sm h1 {
+    font-size: 1.75rem;
+  }
+  .font-size-sm li {
+    font-size: 14px;
+  }
 }
 
 header {
@@ -6834,8 +6856,8 @@ a:hover:after, a:active:after, a:focus:after {
 }
 
 .video-bg {
-  padding-top: 200px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 60px;
   position: relative;
 }
 @media (min-width: 992px) {
@@ -6876,8 +6898,8 @@ a:hover:after, a:active:after, a:focus:after {
   position: relative;
   z-index: 1;
   background: #fff;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media (min-width: 992px) {
   .content {
@@ -6926,8 +6948,8 @@ header img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   position: relative;
 }
 @media (min-width: 992px) {
@@ -6962,7 +6984,7 @@ header img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 400px;
+  height: 180px;
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 30px;
