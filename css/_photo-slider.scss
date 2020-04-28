@@ -49,10 +49,8 @@
 
 .slide__textbox {
 
-    padding-top:35px;
-    padding-bottom:35px;
-    //padding-left:40px;
-    //padding-right:40px;
+    padding-top:75px;
+    padding-bottom:75px;
     position:relative;
     z-index: 1;
     text-align:left;
@@ -64,9 +62,6 @@
     }
 
     @include media-breakpoint-up(md){
-        //padding-top:200px;
-        //padding-bottom:200px;
-
         li, p {
             font-size:25px;
         }
