@@ -7553,4 +7553,8 @@ li {
   z-index: 1;
 }
 
+.typed-cursor {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

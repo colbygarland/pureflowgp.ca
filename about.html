@@ -64,7 +64,10 @@
             <div class="col-lg-2"></div>
             <div class="col-sm-12 col-lg-6 content xl pr-lg-5 font-size-sm">
                 <h1 class="primary-color font-weight-light">Our Promise</h1>
-                <p>Our dedication to excellence drives us to maintain your equipment with the utmost care. From start to finish, we have the means and resources to provide instrument solutions for you in an efficient and flexible way. We are ready to work with you.</p>
+                <div id="typed-strings">
+                    <p class="text-uppercase d-none">Our dedication to excellence drives us to maintain your equipment with the utmost care. From start to finish, we have the means and resources to provide instrument solutions for you in an efficient and flexible way. We are ready to work with you.</p>
+                </div>
+                <span id="typed"></span>
             </div>
             <div class="col-sm-12 col-lg-4">
                 <div class="d-none d-lg-flex photo-bg align-items-end justify-content-end pr-3 text-right" style="background-image:url(img/04-Edited.jpg)">
@@ -104,4 +107,11 @@
 <script src="js/aos.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/scroll.js"></script>
+<script src="js/typed.js"></script>
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 48
+    });
+</script>
 </body>
