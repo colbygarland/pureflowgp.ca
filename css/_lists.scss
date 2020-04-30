@@ -1,0 +1,32 @@
+.no-list-style {
+
+    list-style: none;
+    margin-bottom:0;
+    padding-left:0;
+
+    @include media-breakpoint-up(lg){
+        padding-left:20px;
+    }
+
+}
+
+li {
+
+    font-weight:500;
+    font-size:20px;
+    margin-bottom:8px;
+
+}
+
+.horizontal-list {
+
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+
+    li {
+        margin-right:15px;
+    }
+
+}

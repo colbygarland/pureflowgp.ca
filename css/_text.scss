@@ -1,16 +1,16 @@
 body {
-  background:#eee;
-  font-family:'Roboto', sans-serif;
+    font-family:$font;
+    font-size:14px;
+
+    @include media-breakpoint-up(lg){
+        font-size:19px;
+    }
 }
 
 h3 {
   font-size:2rem;
   margin-bottom:20px;
   line-height: 1.4;
-}
-
-p, li {
-  font-size:19px;
 }
 
 a {
@@ -26,14 +26,53 @@ a {
   font-weight:300;
 }
 
-.no-list-style {
-  list-style: none;
-  padding-left:20px;
-  margin-bottom:0;
+.text-primary {
+    color:$primary!important;
 }
 
-li {
-  font-weight:500;
-  font-size:20px;
-  margin-bottom:8px;
+.modal-title {
+
+    color:$primary;
+    padding-left:40px;
+    position:relative;
+    font-size:1rem;
+
+    @include media-breakpoint-up(md){
+        font-size:1.25rem;
+    }
+
+    &:before {
+        content:'';
+        background-image:url(../img/pureflow-icon.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:30px;
+        width:30px;
+        display:inline-block;
+        position:absolute;
+        left:0;
+        top:50%;
+        transform:translateY(-50%);
+    }
+
+}
+
+.font-size-lg {
+
+    @include media-breakpoint-up(md) {
+        font-size: 3rem;
+    }
+}
+
+.font-size-sm {
+
+    @include media-breakpoint-down(md) {
+        h1 {
+            font-size: 1.75rem;
+        }
+
+        li {
+            font-size: 14px;
+        }
+    }
 }

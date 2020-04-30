@@ -1,7 +1,13 @@
 footer {
-  padding-top:15px;
-  padding-bottom:15px;
-  p {
-    margin-bottom:0;
-  }
+
+    position:relative;
+    background:$light;
+    z-index:1;
+    padding-top:15px;
+    padding-bottom:15px;
+
+    p {
+        margin-bottom:0;
+    }
+
 }
