@@ -106,7 +106,7 @@
           <div class="col-lg-6 pb-4">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src="https://www.youtube.com/embed/WMLu9vZo2Fc"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -116,7 +116,7 @@
           <div class="col-lg-6 pb-4">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src="https://www.youtube.com/embed/up0nLYu7sRM"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -131,7 +131,7 @@
           <div class="col-lg-6 col-xl-4 pb-4">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src="https://www.youtube.com/embed/el-iWcootCg"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -141,7 +141,7 @@
           <div class="col-lg-6 col-xl-4 pb-4">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src="https://www.youtube.com/embed/3p8lQLZOIGc"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -151,7 +151,7 @@
           <div class="col-lg-6 col-xl-4 pb-4">
             <iframe
               width="100%"
-              height="315"
+              height="250"
               src="https://www.youtube.com/embed/10C1h09Owls"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -184,4 +184,17 @@
   <script src="js/aos.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/scroll.js"></script>
+  <script>
+    window.addEventListener("resize", () => {
+      var height;
+      if (document.documentElement.clientWidth < 1200) height = 250;
+      else height = 315;
+
+      var videos = document.getElementsByTagName("iframe");
+
+      for (var i = 0; i < videos.length; i++) {
+        videos[i].height = height;
+      }
+    });
+  </script>
 </body>
