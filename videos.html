@@ -8,7 +8,7 @@
     property="og:image"
     content="https://pureflowgp.ca/img/social-share.png"
   />
-  <title>About | Pureflow Instrument Solutions | Grande Prairie, AB</title>
+  <title>Videos | Pureflow Instrument Solutions | Grande Prairie, AB</title>
 
   <meta
     name="Description"
@@ -21,7 +21,7 @@
 
   <link href="css/main.min.css" rel="stylesheet" />
   <link
-    href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600&display=swap"
+    href="https://fonts.googleapis.com/css?family=Work+Sans:300,0,600&display=swap"
     rel="stylesheet"
   />
   <link
@@ -84,9 +84,9 @@
         <span></span>
         <ul id="menu">
           <li><a href="/">Home</a></li>
-          <li><a href="about" class="active">About Us</a></li>
+          <li><a href="about">About Us</a></li>
           <li><a href="services">Services</a></li>
-          <li><a href="videos">Videos</a></li>
+          <li><a href="videos" class="active">Videos</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
       </div>
@@ -94,49 +94,72 @@
   </header>
 
   <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div
-          class="col-sm-12 col-lg-6 content xl pr-lg-5 font-size-sm text-center text-lg-left"
-        >
-          <h1 class="primary-color font-weight-light">Our Promise</h1>
-          <p class="text-uppercase">
-            Our dedication to excellence drives us to maintain your equipment
-            with the utmost care. From start to finish, we have the means and
-            resources to provide instrument solutions for you in an efficient
-            and flexible way. We are ready to work with you.
-          </p>
-        </div>
-        <div class="col-sm-12 col-lg-4">
-          <div
-            class="d-none d-lg-flex photo-bg align-items-end justify-content-end pr-3 text-right"
-            style="background-image: url(img/04-Edited.jpg)"
-          >
-            <h2 class="d-none d-lg-block text-white">
-              Honest
-              <br />
-              <span class="primary-color">Flexible</span>
-              <br />
-              Committed
-            </h2>
+    <div class="content">
+      <div class="container">
+        <div class="row pb-5">
+          <div class="col-sm-12">
+            <h1 class="primary-color font-weight-light pb-5">Videos</h1>
           </div>
-          <div
-            class="d-lg-none photo-bg d-flex align-items-end justify-content-end pr-3 text-right mt-0 mb-0"
-            style="background-image: url(img/baker-pumps.jpg)"
-          ></div>
+          <div class="col-sm-12">
+            <h2>Parts</h2>
+          </div>
+          <div class="col-lg-6 pb-4 text-center">
+            <iframe
+              width="0"
+              height="210"
+              src="https://www.youtube.com/embed/WMLu9vZo2Fc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-lg-6 pb-4 text-center">
+            <iframe
+              width="0"
+              height="210"
+              src="https://www.youtube.com/embed/up0nLYu7sRM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Commitment to You</h2>
+          </div>
+          <div class="col-lg-6 pb-4 text-center">
+            <iframe
+              width="0"
+              height="210"
+              src="https://www.youtube.com/embed/el-iWcootCg"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-lg-6 pb-4 text-center">
+            <iframe
+              width="0"
+              height="210"
+              src="https://www.youtube.com/embed/3p8lQLZOIGc"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-lg-6 pb-4 text-center">
+            <iframe
+              width="0"
+              height="210"
+              src="https://www.youtube.com/embed/10C1h09Owls"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container d-lg-none content">
-      <h2 class="text-uppercase text-right font-weight-light font-size-lg mb-0">
-        Honest
-        <br />
-        <span class="primary-color">Flexible</span>
-        <br />
-        Committed
-      </h2>
     </div>
   </main>
 
@@ -161,4 +184,25 @@
   <script src="js/aos.js"></script>
   <script src="js/slick.js"></script>
   <script src="js/scroll.js"></script>
+  <script>
+    const resizeVideo = () => {
+      var height;
+      var width;
+      if (document.documentElement.clientWidth < 1200) {
+        height = 190;
+        width = 340;
+      } else {
+        height = 315;
+        width = "100%";
+      }
+
+      var videos = document.getElementsByTagName("iframe");
+      for (var i = 0; i < videos.length; i++) {
+        videos[i].height = height;
+        videos[i].width = width;
+      }
+    };
+    window.addEventListener("resize", resizeVideo);
+    resizeVideo();
+  </script>
 </body>
